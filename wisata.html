@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Wisata - Wisata Nusantara</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f6f9; color: #333; }
+
+        nav { background: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ddd; }
+        .logo { font-size: 22px; font-weight: bold; color: #0f2c59; }
+        nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+        nav ul li a { text-decoration: none; color: #555; font-weight: bold; padding: 8px 12px; }
+        nav ul li a:hover { color: #0f2c59; border-bottom: 2px solid #0f2c59; }
+        nav ul li a.active { color: #0f2c59; border-bottom: 2px solid #0f2c59; }
+
+        .section { padding: 40px; text-align: center; }
+        .grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; max-width: 900px; margin: auto; }
+
+        .card { background: white; border: 1px solid #ddd; width: 40%; border-radius: 12px; overflow: hidden; padding: 20px; text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+
+        .link-lokasi { display: block; margin: 10px 0 5px 0; color: #b91c1c; font-weight: bold; text-decoration: none; font-size: 14px; }
+        .link-lokasi:hover { text-decoration: underline; }
+        .btn-detail { display: block; text-align: center; padding: 10px; background: #0f2c59; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px; }
+        .btn-detail:hover { background: #1d4ed8; }
+
+        .table-section { padding: 40px; max-width: 900px; margin: auto; }
+        table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        th, td { padding: 15px; border: 1px solid #ddd; text-align: left; }
+        th { background: #0f2c59; color: white; }
+        tr:nth-child(even) { background: #f4f6f9; }
+        tr:hover td { background: #eef2f6; }
+
+        .back-to-top { display: block; text-align: center; margin-top: 30px; color: #0f2c59; font-weight: bold; text-decoration: none; }
+        .back-to-top:hover { text-decoration: underline; }
+
+        footer { background: #111; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Wisata Nusantara</div>
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="wisata.html" class="active">Daftar Wisata</a></li>
+        <li><a href="penginapan.html">Penginapan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+</nav>
+
+<div class="section">
+    <h1 style="color: #0f2c59;">Daftar Destinasi Wisata</h1>
+    <p style="color: #666; margin-bottom: 30px;">Pilih destinasi impianmu dan temukan informasi lengkapnya</p>
+
+    <div class="grid">
+        <div class="card">
+            <img src="images/bali.jpeg" alt="Bali">
+            <h3>Bali</h3>
+            <p>Kombinasi pantai menawan dan kehangatan tradisi budaya lokal yang mendunia.</p>
+            <a href="https://www.google.com/maps/search/Bali" target="_blank" class="link-lokasi">📍 Bali</a>
+            <a href="https://id.wikipedia.org/wiki/Bali" target="_blank" class="btn-detail">Lihat Detail</a>
+        </div>
+
+        <div class="card">
+            <img src="images/borobudur.jpeg" alt="Borobudur">
+            <h3>Candi Borobudur</h3>
+            <p>Kemegahan monumen candi Buddha terbesar peninggalan sejarah dunia di Jawa Tengah.</p>
+            <a href="https://www.google.com/maps/search/Borobudur" target="_blank" class="link-lokasi">📍 Jawa Tengah</a>
+            <a href="https://id.wikipedia.org/wiki/Candi_Borobudur" target="_blank" class="btn-detail">Lihat Detail</a>
+        </div>
+
+        <div class="card">
+            <img src="images/bromo.jpeg" alt="Bromo">
+            <h3>Gunung Bromo</h3>
+            <p>Keindahan kawah aktif dan pemandangan matahari terbit yang sangat memukau di Jawa Timur.</p>
+            <a href="https://www.google.com/maps/search/Gunung_Bromo" target="_blank" class="link-lokasi">📍 Jawa Timur</a>
+            <a href="https://id.wikipedia.org/wiki/Gunung_Bromo" target="_blank" class="btn-detail">Lihat Detail</a>
+        </div>
+
+        <div class="card">
+            <img src="images/komodo.jpeg" alt="Komodo">
+            <h3>Pulau Komodo</h3>
+            <p>Habitat asli kadal raksasa komodo dengan panorama alam savana yang eksotis di NTT.</p>
+            <a href="https://www.google.com/maps/search/Pulau_Komodo" target="_blank" class="link-lokasi">📍 Nusa Tenggara Timur</a>
+            <a href="https://id.wikipedia.org/wiki/Taman_Nasional_Komodo" target="_blank" class="btn-detail">Lihat Detail</a>
+        </div>
+
+        <div class="card">
+            <img src="images/raja_ampat.jpeg" alt="Raja Ampat">
+            <h3>Raja Ampat</h3>
+            <p>Surga bawah laut dengan kekayaan biota laut yang luar biasa dan pemandangan gugusan pulau yang indah.</p>
+            <a href="https://www.google.com/maps/search/Raja_Ampat" target="_blank" class="link-lokasi">📍 Papua Barat</a>
+            <a href="https://id.wikipedia.org/wiki/Kepulauan_Raja_Ampat" target="_blank" class="btn-detail">Lihat Detail</a>
+        </div>
+
+        <div class="card">
+            <img src="images/toba.jpeg" alt="Danau Toba">
+            <h3>Danau Toba</h3>
+            <p>Danau vulkanik terbesar dengan keunikan Pulau Samosir yang berada tepat di tengahnya.</p>
+            <a href="https://www.google.com/maps/search/Danau_Toba" target="_blank" class="link-lokasi">📍 Sumatera Utara</a>
+            <a href="https://id.wikipedia.org/wiki/Danau_Toba" target="_blank" class="btn-detail">Lihat Detail</a>
+        </div>
+    </div>
+</div>
+
+<div class="table-section">
+    <h2 style="color: #0f2c59; text-align: center; margin-bottom: 20px;">Tabel Informasi Harga Tiket Masuk</h2>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama Wisata</th>
+            <th>Lokasi</th>
+            <th>Deskripsi</th>
+            <th>Harga Tiket (Rp)</th>
+        </tr>
+        <tr><td>1</td><td><b>Bali</b></td><td>Bali</td><td>Destinasi wisata budaya dunia</td><td>15.000</td></tr>
+        <tr><td>2</td><td><b>Candi Borobudur</b></td><td>Jawa Tengah</td><td>Situs sejarah candi Buddha</td><td>50.000</td></tr>
+        <tr><td>3</td><td><b>Gunung Bromo</b></td><td>Jawa Timur</td><td>Wisata pegunungan &amp; sunrise</td><td>30.000</td></tr>
+        <tr><td>4</td><td><b>Pulau Komodo</b></td><td>NTT</td><td>Taman nasional satwa langka</td><td>150.000</td></tr>
+        <tr><td>5</td><td><b>Raja Ampat</b></td><td>Papua Barat</td><td>Wisata bahari dunia</td><td>200.000</td></tr>
+        <tr><td>6</td><td><b>Danau Toba</b></td><td>Sumatera Utara</td><td>Danau vulkanik terbesar</td><td>10.000</td></tr>
+    </table>
+    <a href="#top" class="back-to-top">⬆ Kembali ke Atas</a>
+</div>
+
+<footer>
+    <p>© 2026 Wisata Nusantara - Aljanatul Hikma</p>
+</footer>
+
+</body>
+</html>
